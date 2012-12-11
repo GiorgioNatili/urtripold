@@ -33,7 +33,7 @@ define('index', [
 
         buildSplashScreen(splash);
 
-        //navigator.splashscreen.hide();
+       // navigator.splashscreen.hide();
 
     };
 

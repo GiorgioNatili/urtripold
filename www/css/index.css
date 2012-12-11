@@ -1,48 +1,24 @@
-html,
-body {
-    height:100%;
-    font-size:12px;
-    width:100%;
-}
 
-html {
-    display:table;
-}
+body{
 
-body {
-
-    padding: 0;
-    margin: 0;
-    background-color: #000;
-    background-image:linear-gradient(center, #003810 0%, #00290E 51%);
-    background-image:-webkit-linear-gradient(center, #003810 0%, #00290E 51%);
-    background-image:-ms-linear-gradient(center, #003810 0%, #00290E 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left center,
-        left center,
-        color-stop(0, #003810),
-        color-stop(0.51, #00290E)
-    );
-    display: inline-block;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    background-image:url(../img/intro_background.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    overflow: hidden;
 
 }
 
 .app {
 
-    background-image:url(../img/intro_background.jpg);
-    background-repeat:no-repeat;
-    margin:0px auto;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
 
 }
 
-#index header{
+.app header {
 
+    clear:both;
+    float:left;
+    width:100%;
     color: white;
     font-size: 1.3em;
     text-align: center;
@@ -52,14 +28,7 @@ body {
 
 }
 
-#index header a, #index header a:hover, #index header a:visited{
-
-    color: white;
-    text-decoration: none;
-
-}
-
-#index .app hgroup{
+.app hgroup{
 
     text-align:center;
     color: white;
@@ -67,85 +36,81 @@ body {
 
 }
 
-#index .appName{
+.appName{
 
     font-size: 6em;
 
 }
 
-#index .appSlogan{
+.appSlogan{
 
     font-size: 2em;
     margin-top: -70px;
 
 }
 
-#index nav{
+.app nav{
 
-   /* border: 1px solid #7fff00;*/
-    margin-top: -20px;
-    display: table;
-    margin: 0 auto;
+    float:left;
+    width:100%;
+    overflow:hidden;
+    position:relative;
 
 }
 
-#index .mainNav{
-
-    /*border: 1px solid red;*/
+.sectionNav {
 
     clear:left;
     float:left;
     list-style:none;
     margin:0;
     padding:0;
-    height: 128px;
-    width: 400px;
+    position:relative;
+    left:50%;
     text-align:center;
 
 }
 
-#index .mainNav li {
+.sectionNav li {
 
+    display:block;
+    float:left;
+    list-style:none;
     margin:0;
     padding:0;
-    display: inline;
+    position:relative;
+    right:50%;
 
 }
 
-#index .mainNav li a{
+.sectionNav li a{
 
-    float: left;
-    display: block;
-    width: 128px;
-    height: 128px;
-    background-position: center;
-    background-repeat: no-repeat;
+    display:block;
+    margin:0 0 0 1px;
+    padding:0 10px 0 10px;
+    text-decoration:none;
+    line-height:90px;
+    width: 70px;
     text-indent: -5000px;
 
 }
 
-#index .mainNav #createBtn a{
+.sectionNav #createBtn a{
 
-    background-image:url(../img/create.png);
-
-}
-
-#index .mainNav #openBtn a{
-
-    background-image:url(../img/open.png);
+    background:url(../img/create.png) center no-repeat;
 
 }
 
-#index .mainNav #shareBtn a{
+.sectionNav #openBtn a{
 
-    background-image:url(../img/share.png);
+    background:url(../img/open.png) center no-repeat;
+    margin-left: 10px;
 
 }
 
-.app section{
+.sectionNav #shareBtn a{
 
-    margin: 0;
-    padding: 0;
+    background:url(../img/share.png) center no-repeat;
 
 }
 
@@ -189,11 +154,6 @@ body {
 
 /* portrait */
 /* @media screen and (max-aspect-ratio: 1/1) */
-.app {
-    background-position:center top;
-   /* height:100px;*/              /* adds enough room for text */
-    /*padding:180px 0px 0px 0px;*/ /* background height - shadow offset */
-}
 
 /* lanscape (when wide enough) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:445px) {
